@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Now! for an amazing & fun knowledge ride</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="navbar_list f-4rem">
+        <li class="navbar_list__item"></li>
+        <li class="navbar_list__item">
+          <a href="/">Home</a>
+        </li>
+        <li class="navbar_list__item" id="quiz">
+          <a href="#">Quiz</a>
+        </li>
+        <li class="navbar_list__item active" id="login">
+          <a href="/login.html">Login</a>
+        </li>
+        <li class="navbar_list__item" id="logout">
+          <a onclick="logout()">Logout</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="grid-2-col">
+      <div>
+        <img
+          class="img-fit hide-at-700"
+          src="./assets/images/login.jpeg"
+          alt="Login Image"
+        />
+      </div>
+      <div class="wd-80">
+        <div class="heading-secondary p-1rem txt-center spl-700">
+          Welcome Back! Good to see you again!
+        </div>
+
+        <form id="login-form">
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input
+              class="p-1rem f-3rem"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="john.doe@example.com"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input
+              class="p-1rem f-3rem"
+              type="password"
+              id="password"
+              name="password"
+              placeholder="********"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="submit"
+              onclick="submitDetails()"
+              value="Login"
+              class="btn-page login-spl btn-bold"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+    <footer>Made with ❤️ by Shivam Gera - A little luck & A little work</footer>
+    <script src="assets/script/auth.js"></script>
+    <script src="assets/script/index.js"></script>
+  </body>
+</html>

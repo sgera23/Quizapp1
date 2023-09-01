@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz 'o' Pethia - A place to check your general CS knowledge</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="./assets/script/preventAccess.js"></script>
+  </head>
+  <body class="spl-page">
+    <div class="test-window" style="width: 100%">
+      <h1 class="heading-secondary" id="quiz-title">Quiz App</h1>
+
+      <div class="info flex">
+        <div class="p-2rem f-2rem" id="attempted" style="color: green"></div>
+        <div class="p-2rem f-2rem" id="unattempted" style="color: red"></div>
+        <div class="p-2rem f-2rem" id="left" style="color: black"></div>
+      </div>
+      <div class="timer">Time Left: <span id="timer">20</span> seconds</div>
+      <div class="progress">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+      <div class="question" id="question"></div>
+      <div class="choices" id="choices"></div>
+      <button id="nextButton" style="display: none">Next Question</button>
+    </div>
+    <footer class="mt-5rem">
+      Made with ❤️ by Shivam Gera - A little luck & A little work
+    </footer>
+    <script src="./assets/script/quiz.js"></script>
+  </body>
+</html>
